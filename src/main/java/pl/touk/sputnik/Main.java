@@ -24,6 +24,7 @@ public final class Main {
 
     public static void main(String[] args) {
         printWelcomeMessage();
+        printHelloFromTP();
         CliWrapper cliWrapper = new CliWrapper();
         CommandLine commandLine = null;
         try {
@@ -63,5 +64,9 @@ public final class Main {
 
     private static void printWelcomeMessage() {
         System.out.println("Sputnik version " + Main.class.getPackage().getImplementationVersion());
+    }
+
+    private static void printHelloFromTP() {
+        System.out.println("This is a test");
     }
 }
